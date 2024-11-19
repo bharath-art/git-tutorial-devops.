@@ -1,0 +1,90 @@
+Here’s a list of commonly used Git commands along with their descriptions:
+
+Basic Git Commands
+
+	1.	git init
+Initializes a new Git repository in the current directory.
+	2.	git clone [url]
+Creates a local copy of a remote repository.
+	3.	git status
+Displays the state of the working directory and staging area (e.g., untracked, modified, or staged files).
+	4.	git add [file/directory]
+Adds files or directories to the staging area.
+	5.	git commit -m "message"
+Records changes in the repository with a message describing the changes.
+	6.	git branch
+Lists all branches in the repository. Adds -a to include remote branches.
+	7.	git branch [branch-name]
+Creates a new branch with the specified name.
+	8.	git checkout [branch-name]
+Switches to the specified branch.
+	9.	git checkout -b [branch-name]
+Creates and switches to a new branch.
+	10.	git merge [branch-name]
+Combines the specified branch into the current branch.
+	11.	git pull
+Fetches and integrates changes from a remote repository into the current branch.
+	12.	git push [remote-name] [branch-name]
+Sends commits from the local repository to a remote repository.
+
+Advanced Git Commands
+
+	1.	git log
+Displays the commit history. Add options like --oneline or --graph for concise or visual outputs.
+	2.	git remote add [name] [url]
+Adds a remote repository to your project.
+	3.	git fetch [remote-name]
+Downloads updates from a remote repository without merging them.
+	4.	git rebase [branch-name]
+Reapplies commits from the current branch onto another branch.
+	5.	git stash
+Temporarily stores changes in a stack without committing them.
+	6.	git stash pop
+Applies the most recent stash and removes it from the stack.
+	7.	git diff
+Shows the differences between the working directory and the staging area or between commits.
+	8.	git reset [file]
+Removes a file from the staging area without deleting the changes.
+	9.	git reset --hard [commit-id]
+Resets the working directory and staging area to a specific commit.
+	10.	git tag [tag-name]
+Creates a lightweight tag for a commit.
+	11.	git tag -a [tag-name] -m "message"
+Creates an annotated tag with a message.
+	12.	git cherry-pick [commit-id]
+Applies a specific commit from another branch to the current branch.
+
+Undoing Changes
+
+	1.	git revert [commit-id]
+Creates a new commit to undo changes made by a specific commit.
+	2.	git clean -f
+Removes untracked files from the working directory.
+	3.	git restore [file]
+Restores the specified file to the last committed state.
+	4.	git restore --staged [file]
+Removes a file from the staging area.
+
+Collaboration Commands
+
+	1.	git remote
+Lists remote repositories.
+	2.	git push -u [remote-name] [branch-name]
+Pushes changes and sets the upstream branch for the current branch.
+	3.	git pull --rebase
+Fetches changes from a remote branch and rebases them onto the current branch.
+	4.	git fetch --all
+Fetches all updates from all remotes.
+
+Inspection Commands
+
+	1.	git show [commit-id]
+Displays detailed information about a specific commit.
+	2.	git blame [file]
+Shows who made each change to a file.
+	3.	git shortlog
+Summarizes commit history by author.
+	4.	git reflog
+Displays the history of changes made to references (e.g., branches, HEAD).
+
+These commands form the core of Git usage for version control, collaboration, and code management. 
